@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promosi Objek Wisata di Indonesia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans:ital@1&family=Merienda:wght@300&family=Pixelify+Sans&family=Poppins:wght@800&family=Young+Serif&display=swap');
+
+        body{
+            background-color: #D6CC99;
+            size-adjust: auto;
+        }
+        .dark-mode {
+            background-color: rgb(88, 88, 88);
+            color: white;
+        }
+        h1 {
+            font-family: 'Young Serif', serif;
+            font-style: normal;
+            text-align: center;
+            color: #FDE5D4;
+            background: fixed;
+            background-color: #001524;
+            border: none;
+            border-radius: 10px;
+        }
+
+        h2{
+            font-family: 'Young Serif', serif;
+        }
+
+        p{
+            font-family: 'Merienda', cursive;
+        }
+
+        img{
+            width: 100%; /* Gambar akan mengisi lebar container */
+            max-width: 300px; /* Tetapkan lebar maksimum gambar */
+            height: auto; /* Lebar gambar akan mengikuti proporsi aslinya */
+            content: normal;
+            border: none;
+            border-end-start-radius: 40%;
+            border-top-right-radius: 40%;
+        }
+
+        /* CSS untuk mengatur tampilan tabel */
+        table {
+            border-collapse: separate;
+            border-spacing: 5px;
+            border-style: hidden;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            background-color: #f59b5a;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #001524;
+            color: #FDE5D4;
+        }
+
+        /* CSS untuk tampilan list */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer{
+            background-color: #001524;
+            color: #FDE5D4;
+            text-align: center;
+            border:none;
+            border-radius: 10px;
+            margin-left: 40%;
+            margin-right: 30%;
+        }
+
+        /* CSS untuk kontainer galeri */
+        .gambar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gambar-container img {
+            margin: 10px;
+            max-width: 300px;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            /* Atur lebar gambar menjadi 100% ketika tampilan layar kecil */
+            img {
+                width: 100%;
+                max-width: none;
+                border-radius: 0; /* Hapus border-radius pada gambar */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Objek Wisata Indonesia</h1>
+    </header>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <section id="beranda">
+        <h2>Selamat Datang di Objek Wisata Indonesia</h2>
+        <p>Selamat datang di situs web kami yang menawarkan informasi tentang destinasi wisata indah di Indonesia.</p>
+    </section>
+
+    <section id="destinasi">
+        <h2>Destinasi Wisata</h2>
+        <table>
+            <tr>
+                <th>Nama Destinasi</th>
+                <th>Lokasi</th>
+                <th>Deskripsi</th>
+            </tr>
+            <tr>
+                <td><a href="bali.jpg">Bali</a></td>
+                <td>Bali, Indonesia</td>
+                <td>Pulau yang terkenal dengan pantai-pantai indahnya.</td>
+            </tr>
+            <tr>
+                <td><a href="jogja.jpg">Yogyakarta</a></td>
+                <td>Yogyakarta, Indonesia</td>
+                <td>Kota budaya dengan banyak candi dan keraton.</td>
+            </tr>
+            <tr>
+                <td><a href="bromo.jpg">Gunung Bromo</a></td>
+                <td>East Java, Indonesia</td>
+                <td>Gunung berapi aktif yang indah dengan pemandangan matahari terbit yang menakjubkan.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="galeri">
+        <h2>Galeri</h2>
+        <div class="gambar-container">
+            <img src="bali.jpg" alt="Bali">
+            <img src="jogja.jpg" alt="Yogyakarta">
+            <img src="bromo.jpg" alt="Gunung Bromo">
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda memiliki pertanyaan atau ingin mendapatkan informasi lebih lanjut, silakan hubungi kami:</p>
+        <ul>
+            <li>Email: kaylafadalwa@gmail.com</li>
+            <li>Telepon: 123-456-7890</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; </p>
+    </footer>
+
+    <script>
+        // Fungsi untuk menganimasikan elemen
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    </script>
+
+    <style>
+        /* CSS untuk elemen yang akan dianimasikan */
+        #animasi {
+            position: relative;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+        }
+    </style>
+</body>
+</html>

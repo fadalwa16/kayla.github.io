@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header a {
+    background-color: black;
+    
+    float: right;
+    display: block;
+    color: rgb(0, 255, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: #ffffff;
+    color: darkgreen;
+}
+.isi {
+    background-color: #ddd;
+    padding: 10px;
+    height: 200px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}

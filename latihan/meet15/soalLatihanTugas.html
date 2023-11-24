@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <form id="userForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        <script>
+            document.getElementById("userForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Menghentikan event submit
+                
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                
+                // Melakukan validasi formulir
+                if (name == "" || email == "") {
+                    alert("Nama dan Email harus diisi.");
+                } else {
+                    alert("Nama: " + name + "\nEmail: " + email);
+                }
+            });
+        </script>
+    </body>
+</html>
