@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Pilihan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Menu Pilihan:</h1>
+<ul>
+  <li><a href="#" onclick="showCalculator()">[1] Menghitung Kalkulator dengan + - * /</a></li>
+  <li><a href="#" onclick="showTrapesiumArea()">[2] Menghitung Luas Trapesium</a></li>
+  <li><a href="#" onclick="showEvenDivisibleBy3()">[3] Menghitung Deret bilangan genap yang habis dibagi 3</a></li>
+</ul>
+
+<p>Pilihan Anda: <input type="text" id="userChoice"></p>
+
+<div id="result"></div>
+
+<script>
+  function showCalculator() {
+    const userInput = prompt("Masukkan ekspresi matematika (contoh: 2 + 3):");
+    const result = calculate(userInput);
+    displayResult(result);
+  }
+
+  function showTrapesiumArea() {
+    const userInput = prompt("Masukkan panjang alas, panjang atas, dan tinggi trapesium (pisahkan dengan koma):");
+    const result = calculateTrapesiumArea(userInput);
+    displayResult(result);
+  }
+
+  function showEvenDivisibleBy3() {
+    const userInput = prompt("Masukkan batas atas deret bilangan genap:");
+    const result = calculateEvenDivisibleBy3(userInput);
+    displayResult(result);
+  }
+
+  function calculate(expression) {
+    // Implement your calculator logic here
+    // For simplicity, let's assume the expression is valid
+    return eval(expression);
+  }
+
+  function calculateTrapesiumArea(input) {
+    // Implement your trapesium area calculation logic here
+    const [base1, base2, height] = input.split(",").map(Number);
+    return 0.5 * (base1 + base2) * height;
+  }
+
+  function calculateEvenDivisibleBy3(limit) {
+    // Implement your logic to calculate even numbers divisible by 3 in a range
+    const resultArray = [];
+    for (let i = 2; i <= limit; i += 2) {
+      if (i % 3 === 0) {
+        resultArray.push(i);
+      }
+    }
+    return resultArray;
+  }
+
+  function displayResult(result) {
+    document.getElementById("result").innerHTML = "<strong>Hasil:</strong> " + result;
+  }
+</script>
+
+</body>
+</html>

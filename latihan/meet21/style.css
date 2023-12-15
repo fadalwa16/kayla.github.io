@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Didact+Gothic&family=Fjalla+One&family=Noto+Color+Emoji&family=Oswald:wght@500&family=Oxygen:wght@700&family=Playpen+Sans&family=Righteous&display=swap');
+.logo {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: xx-large;
+    backdrop-filter: blur(50px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    color: #e3e3e3;
+}
+.banner {
+    background: url("assets/moon.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+  }
+  
+  .layanan {
+    background:black ;
+    background-size: cover;
+    padding-top: 0;
+    color: #e3e3e3;
+  }
+  .lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+  }
+  
+  .lingkaran i {
+    position: relative;
+    top: 30px;
+  }
+  .rounded{
+    width: 40%;
+  }
+  .slide {
+   color: #e3e3e3;
+   padding-top: 20%;
+   padding-bottom: 20%;
+  }
+
+  .galeri{
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .contact {
+    background: url("assets/Dark\ Planet\ [1920x1080].jpg") center center;
+    color: #e3e3e3;
+    background-size: cover;
+  }
